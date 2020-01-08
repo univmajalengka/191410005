@@ -9,7 +9,7 @@ struct data_jam{
 	int detik2;
 		
 };
-data_jam jam1, jam2, jam3;
+data_jam jam1, jam2, jam3, jam4;
 int main(){
 	cout<<"Masukan Jam = ";
 	cin>>jam1.jam;
