@@ -24,7 +24,7 @@
 ### I'm 18 years old Self-taught Full-Stack developer from Indonesia.
 
 
-#### - 🥀 Learning Flutter  <code><img height="20" src="https://cdn-images-1.medium.com/fit/c/36/36/1*5-aoK8IBmXve5whBQM90GA.png"></code>,Dart <code> <img height="20" width="16" src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2"> </code> &Java <code><img height="20" src="https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg"></code>.
+#### - 🥀 Learning Flutter  <code><img height="20" src="https://cdn-images-1.medium.com/fit/c/36/36/1*5-aoK8IBmXve5whBQM90GA.png"></code>,Dart <code> <img height="20" src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2"></code> &Java <code><img height="20" src="https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg"></code>.
 
 
 
@@ -38,10 +38,6 @@
 
 
 ![Alan Agus Nawan Github Stats](https://github-readme-stats.vercel.app/api?username=alanagusnawan&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
-
-<br />
-
-*************
 
 <br />
 
