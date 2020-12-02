@@ -29,6 +29,4 @@ for(int i = 0; i<length/2;i++)
    cout<<"Ini adalah PALINDROME";}
    else {
    cout<<"Ini bukan PALINDROME";}
-   
-   //can you write recursive function
 }
