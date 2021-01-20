@@ -1,20 +1,43 @@
 package main
- 
-import "fmt"
- 
+
+import (
+      "fmt"
+)
+
 func main() {
-var x,y int
-fmt.Println("Masukan berapa angka ?")
-fmt.Scanln(&x)
-fmt.Println("Masukan angka yang hilang?")
-fmt.Scanln(&y)
-fmt.Println("Berikut bilangan nya")
-    for i := 1; i <= x; i++ {
-        switch {
-        case i == y:
-            continue;
-        default: 
-            fmt.Println(i)
-        }
+    var n int
+    fmt.Println("Masukan Jumlah Bilangan : ")
+    fmt.Scan(&n)
+    set(n)
+}
+
+func set(n int) {
+    fmt.Println("Masukan Array A : ")
+    a := make([]int, n)
+    for i := 0; i < n; i++ {
+        fmt.Scan(&a[i])
     }
+    fmt.Println("Masukan Array B : ")
+    b := make([]int, n)
+    for i := 0; i < n; i++ {
+        fmt.Scan(&b[i])
+    }
+    fmt.Println("Masukan Array Yang Hilang : ")
+      fmt.Println(Difference(a, b))
+}
+
+
+func Difference(a, b []int) (diff []int) {
+    m := make(map[int]bool)
+
+    for _, item := range b {
+            m[item] = true
+    }
+
+    for _, item := range a {
+            if _, ok := m[item]; !ok {
+                    diff = append(diff, item)
+            }
+    }
+    return
 }
