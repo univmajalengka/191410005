@@ -5,24 +5,26 @@ import (
 )
 
 func main() {
-    var n int
+    var m int
     fmt.Println("Masukan Jumlah Bilangan : ")
+    fmt.Scan(&m)
+    var n int
+    fmt.Println("Masukan Jumlah Array : ")
     fmt.Scan(&n)
-    set(n)
+    set(m, n)
 }
 
-func set(n int) {
-    fmt.Println("Masukan Array A : ")
-    a := make([]int, n)
-    for i := 0; i < n; i++ {
-        fmt.Scan(&a[i])
+func set(m, n int) {
+    a := make([]int, m)
+    for i := 0; i < m; i++ {
+        a[i] = i + 1
     }
-    fmt.Println("Masukan Array B : ")
+    fmt.Println("Masukan Array : ")
     b := make([]int, n)
     for i := 0; i < n; i++ {
         fmt.Scan(&b[i])
     }
-    fmt.Println("Masukan Array Yang Hilang : ")
+    fmt.Println("Array Yang Hilang : ")
       fmt.Println(Difference(a, b))
 }
 
