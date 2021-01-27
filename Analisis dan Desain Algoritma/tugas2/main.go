@@ -23,16 +23,18 @@ func set(m, n int) {
     b := make([]int, n)
     for i := 0; i < n; i++ {
         fmt.Scan(&b[i])
+        }
+        unique_elemen := RemoveDuplicatesFromSlice(b)
+        fmt.Println(unique_elemen)
+        fmt.Println("Array Yang Hilang : ")
+          fmt.Println(Difference(a, unique_elemen))
     }
-    fmt.Println("Array Yang Hilang : ")
-      fmt.Println(Difference(a, b))
-}
 
 
-func Difference(a, b []int) (diff []int) {
+func Difference(a, unique_elemen []int) (diff []int) {
     m := make(map[int]bool)
 
-    for _, item := range b {
+    for _, item := range unique_elemen {
             m[item] = true
     }
 
@@ -42,4 +44,21 @@ func Difference(a, b []int) (diff []int) {
             }
     }
     return
+}
+
+func RemoveDuplicatesFromSlice(s []int) []int {
+    m := make(map[int]bool)
+    for _, item := range s {
+            if _, ok := m[item]; ok {
+                    fmt.Println(item, "adalah duplikasi")
+            } else {
+                    m[item] = true
+            }
+    }
+
+    var result []int
+    for item, _ := range m {
+            result = append(result, item)
+    }
+    return result
 }
